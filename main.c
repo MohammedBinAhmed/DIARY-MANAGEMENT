@@ -2,17 +2,19 @@
 #include<stdlib.h>
 #include<string.h>
 #include<dos.h>
-#include "cover.h"
+#include <stdbool.h>
+#include<graphics.h>
+
+#include "splash.h"
+#include "login.h"
 #include "menu.h"
-#include "password.h"
+
 
 int main(void)
 {
-    int choice;
+    system("cls");
     splash();
-
-    password();
-
+    login();
     menu();
 
     return 0;
